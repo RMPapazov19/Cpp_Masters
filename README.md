@@ -3,11 +3,11 @@ C++ Masters
 
 Our team:
 
-Rosen Papazov
-Danislav Todorov
-Dimitar Berdankov
-George Malchev
-Dimitar Bodurov
+Rosen Papazov<br>
+Danislav Todorov<br>
+Dimitar Berdankov<br>
+George Malchev<br>
+Dimitar Bodurov<br>
 
 
 Our idea:
