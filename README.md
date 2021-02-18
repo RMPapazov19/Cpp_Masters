@@ -3,11 +3,11 @@ C++ Masters
 
 Our team:
 
-Rosen Papazov<br>
-Danislav Todorov<br>
-Dimitar Berdankov<br>
-George Malchev<br>
-Dimitar Bodurov<br>
+Rosen Papazov - Scrum trainer<br>
+Danislav Todorov - Back-end developer<br>
+Dimitar Berdankov - Front-end developer<br>
+George Malchev - Q&A<br>
+Dimitar Bodurov - Code checker<br>
 
 
 Our idea:
