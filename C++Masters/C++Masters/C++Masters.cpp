@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <iomanip>
 #include <string>
 #include <stdlib.h>
@@ -162,6 +162,137 @@ int main()
 			for (int i = 3; i < 5; i++)
 			{
 				if (userAnswers[i] == anwersHardHistory[i])
+				{
+					result += 2;
+				}
+			}
+			cout << "Your result: " << result << "/7";
+		}
+	}
+	else if (topic == 2)
+	{
+		cout << "CHOOSE DIFFICULTY: " << endl;
+		cout << "      1) Easy" << endl;
+		cout << "      2) Hard" << endl;
+		cout << "Choice: ";
+		int result = 0;
+		int difficulty;
+		cin >> difficulty;
+		int counter = 0;
+		string userAnswers[10];
+		system("CLS");
+		if (difficulty == 1)
+		{
+			string anwersEasyFood[5] = { "c","a","c","Italy","Japan" };
+			cout << "1.What is a tomato?" << endl;
+			cout << "a) vegetable" << endl;
+			cout << "b) fruit" << endl;
+			cout << "c) both" << endl;
+			cout << "d) nothing" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "2.How long is the shelf life of honey? " << endl;
+			cout << "a) not have" << endl;
+			cout << "b) 1 day" << endl;
+			cout << "c) 1 week" << endl;
+			cout << "d) 1 year" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "3.Which are the main ingredients of moussaka? " << endl;
+			cout << "a) potatoes" << endl;
+			cout << "b) minced meat" << endl;
+			cout << "c) potatoesand minced meat" << endl;
+			cout << "d) savory" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "4.Which country has invented the pasta?" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "5.Which country has invented the ramen?" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			for (int i = 0; i < 3; i++)
+			{
+				if (userAnswers[i] == anwersEasyFood[i])
+				{
+					result++;
+				}
+			}
+			for (int i = 3; i < 5; i++)
+			{
+				if (userAnswers[i] == anwersEasyFood[i])
+				{
+					result += 2;
+				}
+			}
+			cout << "Your result: " << result << "/7";
+		}
+		else if (difficulty == 2)
+		{
+			string answersHardFood[5] = { "b","b","c","Switzerland","Rice" };
+			cout << "1.Which flower does the spice saffron come from?" << endl;
+			cout << "a) Orchid" << endl;
+			cout << "b) Crocus" << endl;
+			cout << "c) Nasturtium" << endl;
+			cout << "d) Poppy" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "2.Which of these chocolate bars does not contain nuts in its ingredient list?" << endl;
+			cout << "a) Snickers" << endl;
+			cout << "b) Double Decker" << endl;
+			cout << "c) Picnic" << endl;
+			cout << "d) Toblerone" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "3.If you ordered nigiri from a Japanese restaurant menu, what would you be served?" << endl;
+			cout << "a) A type of dumpling" << endl;
+			cout << "b) A selection of sliced raw fish & seafood" << endl;
+			cout << "c) A type of sushi featuring rice topped with fish or seafood" << endl;
+			cout << "d) A type of sushi featuring raw fish or seafood wrapped in rice and seaweed" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "4.Gruyere is a cheese from which country?" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "5.In Indonesian and Malay cuisine what does the word ‘nasi’ refer to?" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			for (int i = 0; i < 3; i++)
+			{
+				if (userAnswers[i] == answersHardFood[i])
+				{
+					result++;
+				}
+			}
+			for (int i = 3; i < 5; i++)
+			{
+				if (userAnswers[i] == answersHardFood[i])
 				{
 					result += 2;
 				}
