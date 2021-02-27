@@ -10,7 +10,7 @@ int main()
 	{
 		cout << "-";
 	}
-	cout << "C++Maters";
+	cout << "C++Masters";
 	for (int i = 0; i < 15; i++)
 	{
 		cout << "-";
@@ -27,7 +27,7 @@ int main()
 	{
 		cout << "-";
 	}
-	cout << "C++Maters";
+	cout << "C++Masters";
 	for (int i = 0; i < 15; i++)
 	{
 		cout << "-";
