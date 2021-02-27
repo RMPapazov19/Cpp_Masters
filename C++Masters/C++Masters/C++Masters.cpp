@@ -20,8 +20,8 @@ int main()
 	cout << "   CHOOSE TOPIC:" << endl;
 	cout << "       1) History" << endl;
 	cout << "       2) Food" << endl;
-	cout << "       3) Animals" << endl;
-	cout << "       4) Gaming" << endl;
+	cout << "       3) Gaming" << endl;
+	cout << "       4) Animals" << endl;
 	cout << "       5) Computers" << endl << endl;
 	cout << "|*";
 	for (int i = 0; i < 15; i++)
@@ -293,6 +293,137 @@ int main()
 			for (int i = 3; i < 5; i++)
 			{
 				if (userAnswers[i] == answersHardFood[i])
+				{
+					result += 2;
+				}
+			}
+			cout << "Your result: " << result << "/7";
+		}
+	}
+	else if (topic == 3)
+	{
+		cout << "CHOOSE DIFFICULTY: " << endl;
+		cout << "      1) Easy" << endl;
+		cout << "      2) Hard" << endl;
+		cout << "Choice: ";
+		int result = 0;
+		int difficulty;
+		cin >> difficulty;
+		int counter = 0;
+		string userAnswers[10];
+		system("CLS");
+		if (difficulty == 1)
+		{
+			string answersEasyGaming[5] = { "a","b","b","Peashooter","Batman" };
+			cout << "1.When was Minecraft created" << endl;
+			cout << "a) 2009" << endl;
+			cout << "b) 2000" << endl;
+			cout << "c) 1999" << endl;
+			cout << "d) 2005" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "2. Which video-game series is the character Sub - Zero from?" << endl;
+			cout << "a) COD" << endl;
+			cout << "b) Mortal kombat" << endl;
+			cout << "c) Fortnite" << endl;
+			cout << "d) League of legends" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "3. Which was the best-selling video game of December 2017?" << endl;
+			cout << "a) GTA V" << endl;
+			cout << "b) Call of Duty: WW II" << endl;
+			cout << "c) Paladins" << endl;
+			cout << "d) Uncharted IV" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "4. Which is the first weapon you use in Cuphead?" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "5. Who is the first character you play as in Injustice 2?" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			for (int i = 0; i < 3; i++)
+			{
+				if (userAnswers[i] == answersEasyGaming[i])
+				{
+					result++;
+				}
+			}
+			for (int i = 3; i < 5; i++)
+			{
+				if (userAnswers[i] == answersEasyGaming[i])
+				{
+					result += 2;
+				}
+			}
+			cout << "Your result: " << result << "/7";
+		}
+		else if (difficulty == 2)
+		{
+			string answersHardGaming[5] = { "d","c","c","Master Yi","Rockstar Games" };
+			cout << "1.The video game Assassin's Creed Unity is the successor to which 2013 Assassin's Creed title? " << endl;
+			cout << "a) Assassin’s Creed: Odyssey" << endl;
+			cout << "b) Assassin’s Creed:Origins" << endl;
+			cout << "c) Assassin’s Creed II" << endl;
+			cout << "d) Assassin’s Creed Black Flag" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "2.Who is on the cover of EA Sport's FIFA 19?" << endl;
+			cout << "a) Messi" << endl;
+			cout << "b) Mbappe" << endl;
+			cout << "c) Cristiano Ronaldo" << endl;
+			cout << "d) Ronaldinho" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "3.What is the victory message in Fortnite Battle Royale?" << endl;
+			cout << "a) Champion" << endl;
+			cout << "b) Winner Winner Chicken Dinner" << endl;
+			cout << "c) Victory Royale" << endl;
+			cout << "d) Congrats" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "4.This League of Legends Champion uses a sword, and wears a strange yellow helmet. Known as the Wuju Bladesman, who is this person? " << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "5.Which company is the publisher of Grand Theft Auto V?" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			for (int i = 0; i < 3; i++)
+			{
+				if (userAnswers[i] == answersHardGaming[i])
+				{
+					result++;
+				}
+			}
+			for (int i = 3; i < 5; i++)
+			{
+				if (userAnswers[i] == answersHardGaming[i])
 				{
 					result += 2;
 				}
