@@ -600,7 +600,7 @@ int main()
 
 			cout << "3.Who founded Apple Computer?" << endl;
 			cout << "a) Bill Gates" << endl;
-			cout << "b) Steve Jibs" << endl;
+			cout << "b) Steve Jobs" << endl;
 			cout << "c) Sundar Pichai" << endl;
 			cout << "d) Sheryl Sandberg" << endl;
 			cout << "Answer: ";
