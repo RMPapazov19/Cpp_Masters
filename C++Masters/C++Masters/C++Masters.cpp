@@ -84,13 +84,13 @@ int main()
 			counter++;
 			cout << endl << endl;
 
-			cout << "4.Which han has created Bulgaria?" << endl;
+			cout << "4.Which han has created Bulgaria? (Start your answer with a capital letter)" << endl;
 			cout << "Answer: ";
 			getline(cin, userAnswers[counter]);
 			counter++;
 			cout << endl << endl;
 
-			cout << "5.Under which king made Bulgaria on three seas? " << endl;
+			cout << "5.Under which king made Bulgaria on three seas? (Start your answer with a capital letter)" << endl;
 			cout << "Answer: ";
 			getline(cin, userAnswers[counter]);
 			counter++;
@@ -215,13 +215,13 @@ int main()
 			counter++;
 			cout << endl << endl;
 
-			cout << "4.Which country has invented the pasta?" << endl;
+			cout << "4.Which country has invented the pasta? (Start your answer with a capital letter)" << endl;
 			cout << "Answer: ";
 			getline(cin, userAnswers[counter]);
 			counter++;
 			cout << endl << endl;
 
-			cout << "5.Which country has invented the ramen?" << endl;
+			cout << "5.Which country has invented the ramen? (Start your answer with a capital letter)" << endl;
 			cout << "Answer: ";
 			getline(cin, userAnswers[counter]);
 			counter++;
@@ -273,12 +273,12 @@ int main()
 			getline(cin, userAnswers[counter]);
 			counter++;
 			cout << endl << endl;
-			cout << "4.Gruyere is a cheese from which country?" << endl;
+			cout << "4.Gruyere is a cheese from which country? (Start your answer with a capital letter)" << endl;
 			cout << "Answer: ";
 			getline(cin, userAnswers[counter]);
 			counter++;
 			cout << endl << endl;
-			cout << "5.In Indonesian and Malay cuisine what does the word ‘nasi’ refer to?" << endl;
+			cout << "5.In Indonesian and Malay cuisine what does the word ‘nasi’ refer to? (Start your answer with a capital letter)" << endl;
 			cout << "Answer: ";
 			getline(cin, userAnswers[counter]);
 			counter++;
@@ -326,7 +326,7 @@ int main()
 			counter++;
 			cout << endl << endl;
 
-			cout << "2. Which video-game series is the character Sub - Zero from?" << endl;
+			cout << "2.Which video-game series is the character Sub - Zero from?" << endl;
 			cout << "a) COD" << endl;
 			cout << "b) Mortal kombat" << endl;
 			cout << "c) Fortnite" << endl;
@@ -336,7 +336,7 @@ int main()
 			counter++;
 			cout << endl << endl;
 
-			cout << "3. Which was the best-selling video game of December 2017?" << endl;
+			cout << "3.Which was the best-selling video game of December 2017?" << endl;
 			cout << "a) GTA V" << endl;
 			cout << "b) Call of Duty: WW II" << endl;
 			cout << "c) Paladins" << endl;
@@ -346,13 +346,13 @@ int main()
 			counter++;
 			cout << endl << endl;
 
-			cout << "4. Which is the first weapon you use in Cuphead?" << endl;
+			cout << "4.Which is the first weapon you use in Cuphead? (Start your answer with a capital letter)" << endl;
 			cout << "Answer: ";
 			getline(cin, userAnswers[counter]);
 			counter++;
 			cout << endl << endl;
 
-			cout << "5. Who is the first character you play as in Injustice 2?" << endl;
+			cout << "5.Who is the first character you play as in Injustice 2? (Start your answer with a capital letter)" << endl;
 			cout << "Answer: ";
 			getline(cin, userAnswers[counter]);
 			counter++;
@@ -404,12 +404,143 @@ int main()
 			getline(cin, userAnswers[counter]);
 			counter++;
 			cout << endl << endl;
-			cout << "4.This League of Legends Champion uses a sword, and wears a strange yellow helmet. Known as the Wuju Bladesman, who is this person? " << endl;
+			cout << "4.This League of Legends Champion uses a sword, and wears a strange yellow helmet. Known as the Wuju Bladesman, who is this person? (Start your answer with a capital letter)" << endl;
 			cout << "Answer: ";
 			getline(cin, userAnswers[counter]);
 			counter++;
 			cout << endl << endl;
-			cout << "5.Which company is the publisher of Grand Theft Auto V?" << endl;
+			cout << "5.Which company is the publisher of Grand Theft Auto V? (Start your answer with a capital letter)" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			for (int i = 0; i < 3; i++)
+			{
+				if (userAnswers[i] == answersHardGaming[i])
+				{
+					result++;
+				}
+			}
+			for (int i = 3; i < 5; i++)
+			{
+				if (userAnswers[i] == answersHardGaming[i])
+				{
+					result += 2;
+				}
+			}
+			cout << "Your result: " << result << "/7";
+		}
+	}
+	else if (topic == 4)
+	{
+		cout << "CHOOSE DIFFICULTY: " << endl;
+		cout << "      1) Easy" << endl;
+		cout << "      2) Hard" << endl;
+		cout << "Choice: ";
+		int result = 0;
+		int difficulty;
+		cin >> difficulty;
+		int counter = 0;
+		string userAnswers[10];
+		system("CLS");
+		if (difficulty == 1)
+		{
+			string answersEasyAnimals[5] = { "d","b","d","Bamboo","Lion" };
+			cout << "1.How many tentacles does an octopus have?" << endl;
+			cout << "a) 2" << endl;
+			cout << "b) 4" << endl;
+			cout << "c) 69" << endl;
+			cout << "d) 8" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "2.Which is the tallest animal in the world?" << endl;
+			cout << "a) Lamma" << endl;
+			cout << "b) Giraffe" << endl;
+			cout << "c) Elephant" << endl;
+			cout << "d) Lion" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "3.Which is the largest mammal in the wrold?" << endl;
+			cout << "a) Elephant" << endl;
+			cout << "b) Hippo" << endl;
+			cout << "c) Crocodile" << endl;
+			cout << "d) Blue whale" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "4.What do the pandas eat? (Start your answer with a capital letter)" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "5.What animal is Simba? (Start your answer with a capital letter)" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			for (int i = 0; i < 3; i++)
+			{
+				if (userAnswers[i] == answersEasyAnimals[i])
+				{
+					result++;
+				}
+			}
+			for (int i = 3; i < 5; i++)
+			{
+				if (userAnswers[i] == answersEasyAnimals[i])
+				{
+					result += 2;
+				}
+			}
+			cout << "Your result: " << result << "/7";
+		}
+		else if (difficulty == 2)
+		{
+			string answersHardGaming[5] = { "c","d","a","Armadillo","2" };
+			cout << "1.Which group of animals live on their own tropical island and swim in a turwuoise-blue sea?" << endl;
+			cout << "a) Monkeys" << endl;
+			cout << "b) Rabbits" << endl;
+			cout << "c) Pigs" << endl;
+			cout << "d) Wolfs" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "2.Who is the closest living relative of the rock hyrax?" << endl;
+			cout << "a) Guinea pig" << endl;
+			cout << "b) Racoon" << endl;
+			cout << "c) Lion" << endl;
+			cout << "d) Elephant" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "3.Which is the first animal tamed by humans?" << endl;
+			cout << "a) Goat" << endl;
+			cout << "b) Camel" << endl;
+			cout << "c) Cat" << endl;
+			cout << "d) Pig" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "4.Which mammal is able to hold their breath for up to six minutes under water? (Start your answer with a capital letter)" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "5.How many pairs if wings does a bee have?" << endl;
 			cout << "Answer: ";
 			getline(cin, userAnswers[counter]);
 			counter++;
