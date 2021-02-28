@@ -506,7 +506,7 @@ int main()
 		}
 		else if (difficulty == 2)
 		{
-			string answersHardGaming[5] = { "c","d","a","Armadillo","2" };
+			string answersHardAnimals[5] = { "c","d","a","Armadillo","2" };
 			cout << "1.Which group of animals live on their own tropical island and swim in a turwuoise-blue sea?" << endl;
 			cout << "a) Monkeys" << endl;
 			cout << "b) Rabbits" << endl;
@@ -541,6 +541,137 @@ int main()
 			counter++;
 			cout << endl << endl;
 			cout << "5.How many pairs if wings does a bee have?" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			for (int i = 0; i < 3; i++)
+			{
+				if (userAnswers[i] == answersHardAnimals[i])
+				{
+					result++;
+				}
+			}
+			for (int i = 3; i < 5; i++)
+			{
+				if (userAnswers[i] == answersHardAnimals[i])
+				{
+					result += 2;
+				}
+			}
+			cout << "Your result: " << result << "/7";
+		}
+	}
+	else if (topic == 5)
+	{
+		cout << "CHOOSE DIFFICULTY: " << endl;
+		cout << "      1) Easy" << endl;
+		cout << "      2) Hard" << endl;
+		cout << "Choice: ";
+		int result = 0;
+		int difficulty;
+		cin >> difficulty;
+		int counter = 0;
+		string userAnswers[10];
+		system("CLS");
+		if (difficulty == 1)
+		{
+			string answersEasyComputers[5] = { "d","a","b","CPU","Windows 10" };
+			cout << "1.About how many computer languages are in use?" << endl;
+			cout << "a) 50" << endl;
+			cout << "b) 5000" << endl;
+			cout << "c) 20" << endl;
+			cout << "d) 2000" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "2.What does the Internet prefix WWW stand for?" << endl;
+			cout << "a) World Wide Web" << endl;
+			cout << "b) Western Washington World" << endl;
+			cout << "c) Worldwise Weather" << endl;
+			cout << "d) Wide Width Wickets" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "3.Who founded Apple Computer?" << endl;
+			cout << "a) Bill Gates" << endl;
+			cout << "b) Steve Jibs" << endl;
+			cout << "c) Sundar Pichai" << endl;
+			cout << "d) Sheryl Sandberg" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "4.What is the other name of the procesor (Start your answer with a capital letter)" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+
+			cout << "5.Which is the last realased Windows? (Start your answer with a capital letter)" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			for (int i = 0; i < 3; i++)
+			{
+				if (userAnswers[i] == answersEasyComputers[i])
+				{
+					result++;
+				}
+			}
+			for (int i = 3; i < 5; i++)
+			{
+				if (userAnswers[i] == answersEasyComputers[i])
+				{
+					result += 2;
+				}
+			}
+			cout << "Your result: " << result << "/7";
+		}
+		else if (difficulty == 2)
+		{
+			string answersHardGaming[5] = { "a","d","d","750 MB","Tim Berners-Lee" };
+			cout << "1.The full form of IRQ is?" << endl;
+			cout << "a) Interrupt Request" << endl;
+			cout << "b) Internet Recall Que" << endl;
+			cout << "c) Interest Rewuest Quatation" << endl;
+			cout << "d) Input Request Quote" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "2.Among the following, which term is related to memory?" << endl;
+			cout << "a) WAN" << endl;
+			cout << "b) MAN" << endl;
+			cout << "c) CRT" << endl;
+			cout << "d) RAM" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "3.Computer Hard Disk was first introduced in 1956 by?" << endl;
+			cout << "a) Dell" << endl;
+			cout << "b) Apple" << endl;
+			cout << "c) Microsoft" << endl;
+			cout << "d) IBM" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "4.What is the maximum limit of data a Compact Disc can store up to?" << endl;
+			cout << "Answer: ";
+			getline(cin, userAnswers[counter]);
+			counter++;
+			cout << endl << endl;
+			cout << "5.Who is the Web Inventor?" << endl;
 			cout << "Answer: ";
 			getline(cin, userAnswers[counter]);
 			counter++;
