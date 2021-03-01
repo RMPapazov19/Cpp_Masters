@@ -377,10 +377,10 @@ int main()
 		{
 			string answersHardGaming[5] = { "d","c","c","Master Yi","Rockstar Games" };
 			cout << "1.The video game Assassin's Creed Unity is the successor to which 2013 Assassin's Creed title? " << endl;
-			cout << "a) Assassin’s Creed: Odyssey" << endl;
-			cout << "b) Assassin’s Creed:Origins" << endl;
-			cout << "c) Assassin’s Creed II" << endl;
-			cout << "d) Assassin’s Creed Black Flag" << endl;
+			cout << "a) Assassin's Creed: Odyssey" << endl;
+			cout << "b) Assassin's Creed:Origins" << endl;
+			cout << "c) Assassin's Creed II" << endl;
+			cout << "d) Assassin's Creed Black Flag" << endl;
 			cout << "Answer: ";
 			getline(cin, userAnswers[counter]);
 			getline(cin, userAnswers[counter]);
